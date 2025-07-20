@@ -1,4 +1,4 @@
-FROM debian:9
+FROM debian/eol:stretch
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     avr-libc \
@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     && rm -rf /var/lib/apt/lists/*
 
 ENV KEYBOARD=thock/conundrum
-ENV KEYMAP=default:uf2
+ENV KEYMAP=MinusMario:uf2
 
 VOLUME /qmk_firmware
 WORKDIR /qmk_firmware

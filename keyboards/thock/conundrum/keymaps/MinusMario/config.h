@@ -1,0 +1,4 @@
+#undef TAPPING_TERM
+#define TAPPING_TERM 120
+#define PERMISSIVE_HOLD
+
